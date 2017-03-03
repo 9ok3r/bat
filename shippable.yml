@@ -11,7 +11,7 @@ script:
   - cat /build/IN/sampleapp-deploy/deploy/cluster.json
   - cat /build/IN/sampleapp-deploy/deploy/loadBalancers.json
   - cat /build/IN/sampleapp-deploy/deploy/manifests.json
-  - cat /build/IN/sampleapp-deploy/deploy/sampleapp-man
+  - ls /build/IN/sampleapp-deploy/deploy/sampleapp-man
   - sudo npm install
   - export DISPLAY=:99.0
   - xvfb-run --server-args="-ac" npm test
