@@ -8,6 +8,10 @@ services:
 
 script:
   - ls /build/IN/sampleapp-deploy/deploy
+  - cat /build/IN/sampleapp-deploy/deploy/cluster.json
+  - cat /build/IN/sampleapp-deploy/deploy/loadBalancers.json
+  - cat /build/IN/sampleapp-deploy/deploy/manifests.json
+  - cat /build/IN/sampleapp-deploy/deploy/sampleapp.json
   - sudo npm install
   - export DISPLAY=:99.0
   - xvfb-run --server-args="-ac" npm test
