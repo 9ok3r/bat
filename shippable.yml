@@ -11,7 +11,9 @@ script:
   - cat /build/IN/sampleapp-deploy/deploy/cluster.json
   - cat /build/IN/sampleapp-deploy/deploy/loadBalancers.json
   - cat /build/IN/sampleapp-deploy/deploy/manifests.json
-  - ls /build/IN/sampleapp-deploy/deploy/sampleapp-man
+  - cat /build/IN/sampleapp-deploy/deploy/sampleapp-man/ddc-container-definition.json
+  - cat /build/IN/sampleapp-deploy/deploy/sampleapp-man/ddc-response.json
+
   - sudo npm install
   - export DISPLAY=:99.0
   - xvfb-run --server-args="-ac" npm test
