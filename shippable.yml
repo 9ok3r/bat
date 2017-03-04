@@ -7,6 +7,7 @@ services:
   - selenium
 
 script:
+  - printenv
   - ls /build/IN/sampleapp-deploy/deploy
   - cat /build/IN/sampleapp-deploy/deploy/cluster.json
   - cat /build/IN/sampleapp-deploy/deploy/loadBalancers.json
