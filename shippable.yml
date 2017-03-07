@@ -6,6 +6,10 @@ node_js:
 services:
   - selenium
 
+branches:
+  only:
+    - 9ok3r-patch-1
+    
 script:
   - printenv
   - ls /build/IN/sampleapp-deploy/deploy
